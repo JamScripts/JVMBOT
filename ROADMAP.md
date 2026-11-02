@@ -12,20 +12,18 @@ Sequence is based on evidence and dependencies, not promised delivery dates. Onl
 | M5 — Supervised phone control | Authenticated local command UI through one controller | Access control, command validation, expiry, contention and disconnect tests pass | Planned |
 | M6 — Secure missions | Sensors, bounded missions, policy and JVMGuard integration experiments | Unsafe/unknown proposals block; stale sensors stop; model cannot self-authorize; failure report produced | Future |
 
-## Next three actions
+## Next actions
 
-1. Export the Arduino sketch that currently drives the robot. Preserve exact bytes before uploading anything else.
-2. Record the wiring, board settings and a short forward/back/left/right/stop demonstration with the wheels raised.
-3. Discover the R3 from the Pi over USB without issuing movement commands; record actual device identity and permissions.
+1. Record the wiring, board settings and a short forward/back/left/right/stop demonstration with the wheels raised.
+2. Discover the R3 from the Pi over USB without issuing movement commands; record actual device identity and permissions.
 
 ## Later expansion gates
 
 - Obstacle detection requires sensor mounting, timeout/freshness tests and physical calibration. A kit's advertised feature is not a proven JVMBOT feature.
 - Encoders and odometry are optional later hardware. Until installed and validated, duty cycle is a command, not measured speed or distance.
-- Camera processing, ROS 2 and local AI follow reliable control and diagnostics. Choose software versions when the implementation begins.
+- Camera processing, ROS 2 and local AI follow reliable control and diagnostics. Choosing software versions when the implementation begins.
 - Remote access outside the home remains deferred until the local system is authenticated and tested. No direct public motor-control endpoint.
-- Command City and JVMGuard remain separate projects; link integration evidence rather than copying unrelated histories into this repository.
-
+- Command City and JVMGuard remain separate projects; will link all together into separate repository
 ## Release gates
 
 **First physical release:** exact firmware, verified wiring, environment details, repeatable demo, test record, fault exercise and incident note tied to a commit. No release tag is created merely because documentation exists.
