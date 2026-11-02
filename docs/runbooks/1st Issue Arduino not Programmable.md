@@ -4,7 +4,7 @@
 
 Programming on Windows repeatedly failed with `programmer is not responding`, `not in sync: resp=0x00`, and later `Access is denied`. COM4 was used in the earlier attempts. The builder subsequently reported `Done Uploading`, then successful motor and keyboard exercises.
 
-**Resolved outcome, unconfirmed root cause:** the available record does not prove which change fixed it. The V5 shield was discussed during isolation; do not assert that it caused the failure or that a board replacement was necessary.
+**Resolved outcome:** Isolated the V5 shield. Reinstalled and reconfigured the Arduino IDE. Reconnected the V5 Shield , then attempted to Upload the test code to the board. Which resolved the issue. 
 
 ## Beginner diagnostic procedure for a recurrence
 
