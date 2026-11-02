@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "baseline_date": "2026-11-01",
+  "owner": "JamScripts",
+  "repository": "JVMBOT",
+  "board": "JVMBOT — Engineering Portfolio",
+  "columns": [
+    "Backlog",
+    "Next Up",
+    "In Progress",
+    "Completed"
+  ],
+  "milestones": [
+    {
+      "title": "M0 — Physical baseline",
+      "description": "Retrospective builder-confirmed assembly, upload, motor and serial exercises. Raw artifact gaps remain separate tasks."
+    },
+    {
+      "title": "M1 — Reproducible baseline",
+      "description": "Recover exact working firmware, wiring, settings, historical source and demo evidence."
+    },
+    {
+      "title": "M2 — Pi integration",
+      "description": "USB discovery, bounded serial bridge and independent motor-side stop/fault evidence."
+    },
+    {
+      "title": "M3 — Mechanical protection",
+      "description": "Measured enclosure design, small fit coupon and removable serviceable body."
+    },
+    {
+      "title": "M4 — Operations telemetry",
+      "description": "Managed Pi service, logs and real telemetry-only Command City integration."
+    },
+    {
+      "title": "M5 — Supervised phone control",
+      "description": "Authenticated local UI through one validated controller with expiry and disconnect handling."
+    },
+    {
+      "title": "M6 — Secure missions",
+      "description": "Validated sensors, bounded mission state and deterministic robot policy experiments."
+    }
+  ],
+  "issues": [
+    {
+      "title": "Record completed chassis assembly and wiring",
+      "milestone": "M0 — Physical baseline",
+      "status": "Completed",
+      "evidence": "Builder-confirmed; retrospective record, not a fresh hardware test.",
+      "body": "## Goal\nRecord completed chassis assembly and wiring\n\n## Acceptance criteria\n- [x] Builder reports mechanical assembly and wiring completed\n- [x] Retrospective progress and artifact gaps documented\n\n## Evidence level\nBuilder-confirmed; retrospective record, not a fresh hardware test.\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Record successful Arduino upload and troubleshooting outcome",
+      "milestone": "M0 — Physical baseline",
+      "status": "Completed",
+      "evidence": "Builder-confirmed; exact successful change and raw output pending.",
+      "body": "## Goal\nRecord successful Arduino upload and troubleshooting outcome\n\n## Acceptance criteria\n- [x] Builder reported Done Uploading\n- [x] Incident note records symptoms and unknown definitive root cause\n\n## Evidence level\nBuilder-confirmed; exact successful change and raw output pending.\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Record both-wheel motor test and serial keyboard exercise",
+      "milestone": "M0 — Physical baseline",
+      "status": "Completed",
+      "evidence": "Builder-confirmed; exact sketches and demo media pending.",
+      "body": "## Goal\nRecord both-wheel motor test and serial keyboard exercise\n\n## Acceptance criteria\n- [x] Builder reported both wheels spinning\n- [x] Builder reported command exercise worked\n- [x] Evidence limitations remain explicit\n\n## Evidence level\nBuilder-confirmed; exact sketches and demo media pending.\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Archive the exact currently working Arduino sketches",
+      "milestone": "M1 — Reproducible baseline",
+      "status": "Next Up",
+      "evidence": "Planned",
+      "body": "## Goal\nArchive the exact currently working Arduino sketches\n\n## Acceptance criteria\n- [ ] Export unchanged motor-test and serial-control sketches from the programming laptop\n- [ ] Record IDE, board package, board selection, port and protocol\n- [ ] Inspect for secrets and third-party redistribution limits\n- [ ] Link exact revision to a supervised repeat test\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Capture as-built wiring, power details and baseline demo",
+      "milestone": "M1 — Reproducible baseline",
+      "status": "Next Up",
+      "evidence": "Planned",
+      "body": "## Goal\nCapture as-built wiring, power details and baseline demo\n\n## Acceptance criteria\n- [ ] Record actual pin-to-pin routing, driver jumpers and wheel polarity\n- [ ] Record battery chemistry, cell count and supply arrangement without assumptions\n- [ ] Capture sanitized raised-wheel forward/back/left/right/stop demo\n- [ ] Attach test record and firmware commit\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Recover and validate earlier Pi/simulator source",
+      "milestone": "M1 — Reproducible baseline",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nRecover and validate earlier Pi/simulator source\n\n## Acceptance criteria\n- [ ] Locate original modular package and prototype code\n- [ ] Inspect provenance before publishing\n- [ ] Run relevant existing checks and retain actual outputs\n- [ ] Keep simulated movement distinct from physical hardware\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Discover Arduino USB identity and permissions from the Pi",
+      "milestone": "M2 — Pi integration",
+      "status": "Next Up",
+      "evidence": "Planned",
+      "body": "## Goal\nDiscover Arduino USB identity and permissions from the Pi\n\n## Acceptance criteria\n- [ ] Preserve working firmware first and leave motor power off\n- [ ] Record real USB serial identity and OS permissions\n- [ ] Verify disconnect/reconnect discovery\n- [ ] No motion commands in this discovery checkpoint\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Implement and prove motor-side command expiry and safe reset",
+      "milestone": "M2 — Pi integration",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nImplement and prove motor-side command expiry and safe reset\n\n## Acceptance criteria\n- [ ] Boot and reset produce stopped outputs\n- [ ] Define finite command lifetime in firmware\n- [ ] Demonstrate expired command, sender death and link-loss stop\n- [ ] Require fresh command after reconnect; retain measured results\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Build a bounded Raspberry Pi serial bridge",
+      "milestone": "M2 — Pi integration",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nBuild a bounded Raspberry Pi serial bridge\n\n## Acceptance criteria\n- [ ] Depend on baseline firmware and independent stop gate\n- [ ] One serial-port owner and explicit validated protocol\n- [ ] Finite timeouts and bounded supervised commands\n- [ ] Capture raised-wheel motion, stop and failure evidence\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Measure the assembled robot and design enclosure fit coupons",
+      "milestone": "M3 — Mechanical protection",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nMeasure the assembled robot and design enclosure fit coupons\n\n## Acceptance criteria\n- [ ] Measure mounts, ports, boards, wheels and cable routes\n- [ ] Preserve sensor travel, ventilation and power disconnect\n- [ ] Create dimensioned design and small coupon\n- [ ] Document fit corrections before full print\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Print and validate a removable JVMBOT protective body",
+      "milestone": "M3 — Mechanical protection",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nPrint and validate a removable JVMBOT protective body\n\n## Acceptance criteria\n- [ ] Depend on accepted fit measurements\n- [ ] Publish CAD and export with attribution\n- [ ] Record slicer estimate, actual duration and fit photos\n- [ ] No interference; service access and cooling maintained\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Install a managed Pi service with health and structured logs",
+      "milestone": "M4 — Operations telemetry",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nInstall a managed Pi service with health and structured logs\n\n## Acceptance criteria\n- [ ] Document reproducible installation and least-privilege runtime\n- [ ] Restart stays stopped and does not resume movement\n- [ ] Capture real service status, errors and recovery\n- [ ] Exclude credentials and private network details\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Integrate real Pi telemetry with Command City",
+      "milestone": "M4 — Operations telemetry",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nIntegrate real Pi telemetry with Command City\n\n## Acceptance criteria\n- [ ] Telemetry only; no City motor control in this milestone\n- [ ] Authenticate device and reject invalid/cross-device writes\n- [ ] Compare real values with Pi readings; unknown sensors stay unknown\n- [ ] Test stale heartbeat, offline state, restart and reconnect\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Add authenticated local phone control",
+      "milestone": "M5 — Supervised phone control",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nAdd authenticated local phone control\n\n## Acceptance criteria\n- [ ] Use one validated command path\n- [ ] Reject unauthenticated, invalid and expired commands\n- [ ] Test disconnect, competing writers and stop behavior\n- [ ] Record supervised physical demo; no public motor endpoint\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Validate obstacle sensing and stale-data behavior",
+      "milestone": "M6 — Secure missions",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nValidate obstacle sensing and stale-data behavior\n\n## Acceptance criteria\n- [ ] Record installed hardware and calibration\n- [ ] Use finite sensor timeouts and acquisition freshness\n- [ ] Stop/block when sensor is stale or invalid\n- [ ] Document blind spots and do not claim full-room clearance\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Prototype bounded missions and JVMGuard policy integration",
+      "milestone": "M6 — Secure missions",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nPrototype bounded missions and JVMGuard policy integration\n\n## Acceptance criteria\n- [ ] Depend on validated control and sensor foundations\n- [ ] AI can propose but cannot self-authorize or bypass controller\n- [ ] Unknown/denied proposals never actuate motors\n- [ ] Demonstrate stop/fault path and auditable aborted mission\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    },
+    {
+      "title": "Prepare the first reproducible physical portfolio release",
+      "milestone": "M1 — Reproducible baseline",
+      "status": "Backlog",
+      "evidence": "Planned",
+      "body": "## Goal\nPrepare the first reproducible physical portfolio release\n\n## Acceptance criteria\n- [ ] Exact code, environment, wiring and setup present\n- [ ] Working demo and meaningful failure exercise attached\n- [ ] Troubleshooting case study reviewed against evidence\n- [ ] Tag release only after physical validation; no fabricated metrics\n\n## Evidence level\nPlanned\n\n## Working rule\nAttach an exact revision, environment, expected/actual results and sanitized evidence. Update docs/PROGRESS.md. Keep simulation, builder reports and reproduced physical results distinct."
+    }
+  ]
+}

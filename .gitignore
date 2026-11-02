@@ -1,0 +1,27 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+# Runtime, caches and environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.log
+*.sqlite*
+*.db
+# Build and local editor files
+build/
+dist/
+.pio/
+.DS_Store
+.idea/
+.vscode/
+# Unreviewed evidence and transfer staging
+private/
+raw-evidence/
