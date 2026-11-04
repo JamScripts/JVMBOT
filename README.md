@@ -4,9 +4,9 @@
 
 JVMBOT is a personal engineering portfolio by **JamScripts / JVMM3R**. It starts with a LAFVIN two-wheel robot and grows toward a Raspberry Pi managed platform with diagnostics, controlled commands, telemetry, and documented recovery.
 
-**Current checkpoint:** the assembled robot accepts serial movement commands from a laptop. The builder has reported successful uploads, both wheels spinning, and working keyboard control. The exact running sketch and raw test recordings still need to be archived here.
+**Current checkpoint (2026-11-04):** the assembled robot accepts serial movement commands from the laptop, and the builder has now confirmed **Raspberry Pi → Arduino USB serial → both motors forward** using Pi console command `W`. This is builder-reported evidence, not a benchmark or captured independent test. The exact original uploaded firmware and raw recordings still need archiving.
 
-**Next checkpoint:** preserve the working firmware and evidence before changing the robot, then prove a supervised Raspberry Pi-to-Arduino USB connection.
+**Next checkpoint:** preserve the working firmware, demonstrate a motor-side command-expiry watchdog with wheels raised, then test hold-to-drive controls. Portable Pi power and measured enclosure fit remain planned.
 
 ## What works and what is planned
 
@@ -17,7 +17,7 @@ JVMBOT is a personal engineering portfolio by **JamScripts / JVMM3R**. It starts
 | Both motors turning | Builder-confirmed | Builder reported both wheels spinning |
 | Serial keyboard movement | Builder-confirmed | Builder reported the command exercise worked |
 | Raspberry Pi foundation and software prototypes | Historical record | [Source and evidence limits](docs/EVIDENCE.md); source/tests not yet imported |
-| Pi-to-R3 physical control | Planned | USB discovery, bounded commands, and link-loss tests required |
+| Pi-to-R3 physical control | Builder-confirmed forward movement | `W` in Pi Python controller moved both wheels; [milestone log](docs/milestones/2026-11-04-pi-forward-confirmed.md). Independent link-loss tests remain planned |
 | Phone control / Command City telemetry | Planned | Authentication, stale-state handling, and real-device tests required |
 | Autonomous navigation / AI control / JVMGuard enforcement on robot | Planned | No operational claim yet |
 
@@ -51,6 +51,7 @@ The AI proposes; deterministic controls authorize. A dashboard is not an indepen
 ## Explore the portfolio
 
 - [Progress and completed checkpoints](docs/PROGRESS.md)
+- [2026-11-04: Pi physically drives motors, evidence and limits](docs/milestones/2026-11-04-pi-forward-confirmed.md)
 - [Roadmap and acceptance criteria](ROADMAP.md)
 - [Hardware inventory and wiring verification](hardware/README.md)
 - [Upload troubleshooting case study](docs/runbooks/ARDUINO_UPLOAD.md)
