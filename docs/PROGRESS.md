@@ -13,14 +13,21 @@ Baseline recorded 2026-11-01. Earlier lab dates are approximate unless an artifa
 | H02 | Simulated movement, obstacle checks and reusable controller | Historical documented progress | Blueprint reports prototypes; not physical autonomy and source not recovered |
 | H03 | Modular package, JSON logging and tests | Historical delivery claim | Blueprint reports files delivered; no fresh execution or source import in this baseline |
 
+## 2026-11-04 builder-confirmed Raspberry Pi milestone
+
+| ID | Work | State | Evidence / limitation |
+| --- | --- | --- | --- |
+| C06 | Raspberry Pi Python via USB serial to R3 commands JVMBOT forward | Builder-confirmed | Pi console `W` moved both wheels; precise software revision and repeatable raw output not yet archived. See [milestone log](milestones/2026-11-04-pi-forward-confirmed.md). |
+
 ## Not yet demonstrated here
 
-Pi-to-R3 control, phone driving, an installed motor watchdog, measured motor speed, enclosure fit, live Command City telemetry, enforced JVMGuard robot policy, camera perception, autonomous navigation, and battery state estimation.
+Pi-side A/S/D/X individual exercises, motor-side timeout, GUI hold-to-drive and link-loss safety, phone driving, an installed motor watchdog, measured motor speed, enclosure fit, live Command City telemetry, enforced JVMGuard robot policy, camera perception, autonomous navigation, and battery state estimation.
 
 ## Session log
 
 | Recorded date | Outcome | Next checkpoint |
 | --- | --- | --- |
 | 2026-11-01 | Consolidated reported robot progress, evidence gaps, technical plan and portfolio structure | Recover exact firmware and demo evidence |
+| 2026-11-04 | Raspberry Pi Python console `W` physically moved both wheels forward (builder-confirmed) | Archive exact firmware; watchdog and hold-to-drive test |
 
 Use [the session template](templates/SESSION.md) for each new lab. Completed issues preserve the evidence level rather than retroactively upgrading a recollection to a verified test.
