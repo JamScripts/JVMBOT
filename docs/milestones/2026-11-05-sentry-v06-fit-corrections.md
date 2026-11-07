@@ -33,3 +33,8 @@ The revision uses real photo feedback but **still lacks precise measurements**. 
 - Locate power plug and needed bend radius relative to shell front and chassis top face.
 - Print arch alignment gauge and photograph it against stationary robot; no power.
 - Do not print the other full parts until clearance and mounting are verified.
+
+## 2026-11-07 photo measurement update
+The builder supplied a clearer tape-measure photo and estimated **2 inches (~50.8 mm)** from the **front edge of the printed orange shell to the center of the visible wheel axle**, measured longitudinally. Image shows a plausible ~2-inch horizontal projection, but perspective and zero-point alignment prevent treating it as precision caliper data. **Record as provisional 51 mm.**
+
+Given the v0.7 draft length 198 mm and wheel-center x=-38 mm in a centered longitudinal coordinate system, the draft front-to-axle distance is approximately 61 mm. Assuming front is at x=-99 mm, a 50.8 mm target corresponds to x≈-48.2 mm (roughly 10 mm toward the front). **This is a proposed CAD adjustment, not yet a revised/printed STL or a validated fit.** Confirm actual axle center and printed gauge fit before new full-hull printing.
